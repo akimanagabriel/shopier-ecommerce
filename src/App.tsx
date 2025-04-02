@@ -45,7 +45,7 @@ function App() {
                     <h1 className="text-lg text-center">{title}</h1>
                     <div className="flex gap-10 items-center">
                       <span className="bg-orange-300 text-orange-800 px-2 uppercase rounded-full flex items-center">
-                        <span>{category}</span>
+                        <small className="text-sm">{category}</small>
                       </span>
                       <span className="text-3xl font-bold">${price}</span>
                     </div>
