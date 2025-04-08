@@ -1,11 +1,9 @@
 import CartItem from "@/components/partials/CartItem";
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/store/cartStore";
-import { ShoppingBag, Trash } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Trash } from "lucide-react";
 
 const Cart = () => {
-  const navigate = useNavigate();
   const { products, totalQuantity, emptyCart } = useCartStore();
 
   return (
