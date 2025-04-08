@@ -48,3 +48,15 @@ export default tseslint.config({
   },
 })
 ```
+
+# configure vercel 
+- This line aims to handle reload error on vercel applications
+```json
+{
+  "rewrites": [{ 
+    "source": "/(.*)",
+    "destination": "/"
+  }]
+}
+```
+
