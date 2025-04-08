@@ -1,1 +1,19 @@
- { “routes”: [{ “src”: “/[.]+”, “dest”: “/“, “status”: 200 }] }
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "missing",
+          "missing": [
+            {
+              "type": "filesystem"
+            }
+          ]
+        }
+      ],
+      "destination": "/",
+      "statusCode": 302
+    }
+  ]
+}
