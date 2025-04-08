@@ -11,7 +11,7 @@ function PageHeader() {
   return (
     <div className="sticky top-0 px-4 sm:px-6 backdrop-blur-3xl">
       <motion.div
-        className="cursor-pointer flex justify-between container mx-auto py-4 flex-wrap sticky top-0 z-20"
+        className="cursor-pointer flex justify-between items-center container mx-auto py-4 flex-wrap sticky top-0 z-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
