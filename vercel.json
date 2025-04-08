@@ -1,17 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "missing",
-          "missing": [
-            {
-              "type": "filesystem"
-            }
-          ]
-        }
-      ],
+      "source": "/:path*",
       "destination": "/",
       "statusCode": 302
     }
